@@ -1,0 +1,97 @@
+<?php
+namespace App\Http\Controllers\Backend;
+
+use App\Http\Controllers\Controller;
+use PhpOffice\PhpWord\PhpWord;
+use PhpOffice\PhpWord\Writer\Word2007;
+
+use App\Authorizable;
+// use App\Events\Backend\UserCreated;
+// use App\Events\Backend\UserProfileUpdated;
+// use App\Events\Backend\UserUpdated;
+// use App\Http\Controllers\Controller;
+// use App\Models\Permission;
+// use App\Models\Role;
+// use App\Models\User;
+// use App\Models\Userprofile;
+// use App\Models\UserProvider;
+// use App\Notifications\UserAccountCreated;
+// use Carbon\Carbon;
+// use Exception;
+// use Illuminate\Http\Request;
+// use Illuminate\Support\Arr;
+// use Illuminate\Support\Facades\Hash;
+// use Illuminate\Support\Facades\Log;
+// use Illuminate\Support\Str;
+// use Laracasts\Flash\Flash;
+// use Yajra\DataTables\DataTables;
+
+class WriteController extends Controller
+{
+    use Authorizable;
+
+    public function __construct()
+    {
+        
+    }
+    
+    public function index()
+    {
+        //echo 123;die();    
+    }
+    
+    public function writetext()
+    {sadaadsad
+        echo 'test helloo' ;die();
+        $dirname = uniqid('', true);
+  //echo $dir = \PhpOffice\PhpWord\Settings::getTempDir() . '/' . $dirname;
+      die();  
+      //  mkdir($dir);
+       // \PhpOffice\PhpWord\Settings::setTempDir($dir);
+        
+     $file = public_path('male_form.doc');
+    //$zip_val = new ZipArchive;
+ 
+      
+        if ($handle = opendir($dir)) {
+    echo "Directory handle: $handle\n";
+    echo "Entries:\n";
+
+    /* This is the correct way to loop over the directory. */
+    while (false !== ($entry = readdir($handle))) {
+        echo "$entry\n";
+    }
+
+    /* This is the WRONG way to loop over the directory. */
+    while ($entry = readdir($handle)) {
+        echo "$entry\n";
+    }
+
+    closedir($handle);
+}
+            
+            // $phpword = new \PhpOffice\PhpWord\TemplateProcessor($file);  
+            // $phpword->setValue('«M_1PARISH»','Santosh');
+            // $phpword->setValue('«M_2TESTATOR»','Achari');
+            // $phpword->setValue('«M_3DAY»','Yahoo');
+        
+      // $phpword->saveAs('edited.docx');
+        
+        //   $objWriter = \PhpOffice\PhpWord\IOFactory::createWriter($phpWord, 'Word2007');
+        // try {
+        //     $objWriter->save(storage_path('helloWorld.docx'));
+        // } catch (Exception $e) {
+        // }
+        // }else{
+        //     echo 1221;die();
+        // }    
+        
+        
+     //$phpword = new \PhpOffice\PhpWord\TemplateProcessor($file);
+   //  $bc = $phpWord->getSections();
+     echo 111;die();
+   //  dd($bc);
+
+     
+    }
+}
